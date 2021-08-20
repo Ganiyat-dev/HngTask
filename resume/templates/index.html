@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganiyat Azeez | Resume</title>
+    
+    <!-- Link css file -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-image:url('{% static "img/bodybg/bg4.png" %}')">
+
+    <!-- Header Section  -->
+    <header class="fixed-top bg-light">
+        
+        <div class="container py-3 ">
+            <div class="row">
+                <!-- <a class="h4 text-start d-flex justify-content-around" href="https://zuri.team/" target="_blank"><img src="{% static 'images/hng.png'%}" class="img-fluid" style="height:50px; width: 50px"></a> -->
+                <a class="h4 text-start col-6   " href="https://zuri.team/" target="_blank"><img src="{% static 'img/hng.png'%}" class="img-fluid" style="height:50px"></a>
+                <a class="col-6 text-end my-3" style="font-size:large" href="#contact">Contact Me</a>
+            </div> 
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container bg-light px-4" style="margin-top: 100px;">
+        <div class="row">
+            <div class="form-group">
+                <h1 class="text-dark mt-3">Ganiyat Olajumoke Azeez</h1>
+                <h3 class="text-muted">Python Developer</h3>
+                <p><strong>Acquiring the best knowledege and skills to make the most out of the world</strong></p>
+            
+                <hr class="border-5 mt-3" style="font-size:xx-large">
+                
+                <div class="row text-md-center">
+                    <div class="form-group col-md-3">
+                        <div class="form-label" style="color: rgb(66, 61, 61);"><strong><i class="fa fa-envelope me-3"></i>ganiyatolajumokego@gmail.com</strong></div>
+                    </div>
+    
+                    <div class="form-group col-md-3">
+                        <div class="form-label" style="color: rgb(66, 61, 61);"><strong><i class="fa fa-mobile-phone me-3" style="font-size:24px"></i>+2347087847722</strong></div>
+                    </div>
+    
+                    <div class="form-group col-md-3">
+                        <div class="form-label" style="color: rgb(66, 61, 61);"><strong><i class="fa fa-map-marker me-3" style="font-size:24px"></i>Abuja, Nigeria</strong></div>
+                    </div>
+    
+                    <div class="form-group col-md-3">
+                        <div class="form-label" style="color: rgb(66, 61, 61);"><strong><i class="fa fa-github me-2" style="font-size:24px"></i><a href="https://github.com/Ganiyat-dev" style="text-decoration:none">Ganiyat-dev</a></strong></div>
+                    </div>
+                    <div class="form-group text-start ms-md-2 col-md-3">
+                        <div class="form-label" style="color: rgb(66, 61, 61);"><strong><i class="fa fa-linkedin-square me-2" style="font-size:24px"></i><a href="https://linkedin.com/in/ganiyatazeez" style="text-decoration:none">Ganiyat-dev</a></strong></div>
+                    </div>
+                </div>
+
+                
+                <hr class="border-5" style="font-size:xx-large">
+                <div class="row">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-{{message.tags}} alert-dismissible text-center mt-3">
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% for error in form.errors %}
+                <div class="alert-danger alert-dismissible rounded  text-center my-4 py-2" role="alert">
+                    {{error}}
+                   
+                </div>
+                {% endfor%}
+                </div>
+
+                <div class="container px-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="mb-3 ">Technical Skills</h2>
+                            <ul class="list-inline list-unstyled ">
+                                <li class="list-inline-item bg-primary col-md-2  text-center btn text-white">Python</li>
+                                <li class="list-inline-item bg-primary col-md-3 text-center btn text-white">HTML </li>
+                                <li class="list-inline-item bg-primary col-md-2 text-center btn text-white">Django</li>
+                                <li class="list-inline-item bg-primary col-md-3 mt-sm-0 mt-3  text-center btn text-white"> LATEX </li>
+                                <li class="list-inline-item bg-primary col-md-2 mt-sm-0 mt-3 mt-md-3 text-center btn text-white"> MAPLE</li>
+                                <li class="list-inline-item bg-primary col-md-3  mt-sm-0 mt-3 mt-md-3 text-center btn text-white"> CSS</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="my-3">Soft Skills</h2>
+                            <ul class="list-inline list-unstyled ">
+                                <li class="list-inline-item bg-primary col-6 col-md-4 text-center btn text-white">Teamwork Collaboration</li>
+                                <li class="list-inline-item bg-primary col-5 mt-md-0 text-center btn text-white">Excellent communication</li>
+                                <li class="list-inline-item bg-primary col-md-4 mt-3 text-center btn text-white">Problem Solving</li>
+                                <li class="list-inline-item bg-primary col-md-4 mt-3 text-center btn text-white"> Flexibility / Adaptability</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-5 ">
+                        <h2 class="mt-4">Education</h2>
+                        
+                        <h5>B.Sc Mathematics / University of Ilorin, Kwara State</h5>
+                        <p>Graduate Research Numerical solution of fourth order integro-differential equations by Least Square Approximation
+                            Metjod using Chebyshev polynomial as a basis function - 2018
+                        </p>
+                        <!-- <span>15/2015 - 06/2020</span> -->
+                    </div>
+
+                    <div class="col-md-5 offset-md-1">
+                        <h2 class="mt-4">Experience</h2>
+                        
+                        <h5>Zuri</h5>
+                        <h6>Backend Developer - Intern</h6>
+                        <p>Collaborated with a team to develop an API using pytjon and Django Web Framework</p>
+                    </div>
+
+                    <form action="{% url 'index'%}" class="my-5" method="POST" id="contact">
+                        {% csrf_token %}
+                        <h2 class="text-center  text-dark py-2 mb-3">Leave a Message here</h2>
+                        <hr>
+                        <div class="row">
+                        <div class="form-group col-md-4">
+                            <div class="form-label">Your Name</div>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <div class="form-label">Email</div>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <div class="form-label">Subject</div>
+                            <input type="text" class="form-control" name="subject">
+                        </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <div class="form-label">Message</div>
+                            <textarea  id="" rows="5" class="form-control" name="message_recieved"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-primary" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>
